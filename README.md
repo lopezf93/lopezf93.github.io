@@ -1,2 +1,2 @@
-# lopezf93.github.io
+# Frank Lopez's Homepage
 ePortfolio for Frank Lopez, a SNHU Computer Science Major.
