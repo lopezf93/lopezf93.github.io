@@ -1,0 +1,7 @@
+title: Frank Lopez Computer Science Portfolio
+description: Final Computer Science Portfolio featuring code review and software enhancements.
+
+remote_theme: pages-themes/time-machine@v0.2.0
+
+plugins:
+  - jekyll-remote-theme
