@@ -11,7 +11,7 @@ Pending self review
 
 Pending code review embedding
 
-{% include youtube.html id="SGUZpNBzcic" title="Code Review Video" %}
+{% include youtube.html id="uX7TAaM8W20" title="Code Review Video" %}
 
 ## Portfolio Enhancements
 
