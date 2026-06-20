@@ -19,7 +19,7 @@ This application had a few short comings that I will be addressing within this r
 
 test
 
-![Application User Flow Diagram](assets/images/Inventory Tracker - Planned App Flow.png)
+![Application User Flow Diagram](assets/images/Inventory_Tracker_Planned_App_Flow.png)
 
 test
 
