@@ -19,7 +19,7 @@ This application had a few short comings that I will be addressing within this r
 
 ### Planned Application Flow
 
-The following diagram depicts the expected user flow the new enchanced application wil accomplish.
+The following diagram depicts the expected user flow the new enchanced application will accomplish.
 
 ![Application User Flow Diagram](assets/images/Inventory_Tracker_Planned_App_Flow.png)
 
