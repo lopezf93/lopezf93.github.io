@@ -17,7 +17,11 @@ This application had a few short comings that I will be addressing within this r
 
 ## Portfolio Enhancements
 
+test
+
 ![Application User Flow Diagram](assets/images/Inventory Tracker - Planned App Flow.png)
+
+test
 
 ![Application UML Diagram](assets/images/Inventory Tracker - UML Diagram.png)
 
