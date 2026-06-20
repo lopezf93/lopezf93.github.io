@@ -23,7 +23,7 @@ test
 
 test
 
-![Application UML Diagram](assets/images/Inventory Tracker - UML Diagram.png)
+![Application UML Diagram](assets/images/Inventory_Tracker_UML_Diagram.png)
 
 ### Software Design and Engineering
 
