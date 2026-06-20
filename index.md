@@ -17,13 +17,23 @@ This application had a few short comings that I will be addressing within this r
 
 ## Portfolio Enhancements
 
-test
+### Planned Application Flow
+
+The following diagram depicts the expected user flow the new enchanced application wil accomplish.
 
 ![Application User Flow Diagram](assets/images/Inventory_Tracker_Planned_App_Flow.png)
 
-test
+### UML Diagram
+
+The following diagram depicts the planned software structure of the final application. The only items missing are additional views which would go in the UI layer for the Inventory, Dashboard and Add/Edit Item Form views. These will be added over time as I have plans to further improve the application. 
 
 ![Application UML Diagram](assets/images/Inventory_Tracker_UML_Diagram.png)
+
+### Enhanced Application Demonstration
+
+The following video walks through all functionality of the completed application. 
+
+{% include youtube.html id="5Hzb3DUaLNI" title="Application Demonstration" %}
 
 ### Software Design and Engineering
 
