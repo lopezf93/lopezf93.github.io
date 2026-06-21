@@ -6,8 +6,7 @@ permalink: /enhancement-two/
 
 {% include navigation.html %}
 
-# Enhancement Two: 
-# Algorithms and Data Structures
+# Enhancement Two: Algorithms and Data Structures
 
 On this page, I will detail the second enhancement that was successfully completed from the original code review of the mobile version of the Inventory Tracker.
 
