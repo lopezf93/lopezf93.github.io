@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Enhancement One: Software Design and Engineering
+title: Enhancement One - Software Design and Engineering
 permalink: /enhancement-one/
 ---
 
