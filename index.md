@@ -17,7 +17,7 @@ This application had a few short comings that I will be addressing within this r
 
 {% include youtube.html id="uX7TAaM8W20" title="Code Review Video" %}
 
-## Portfolio Enhancements
+## Portfolio Enhancement Plan
 
 ### Planned Application Flow
 
@@ -31,20 +31,30 @@ The following diagram depicts the planned software structure of the final applic
 
 ![Application UML Diagram](assets/images/Inventory_Tracker_UML_Diagram.png)
 
-### Enhanced Application Demonstration
+## Enhanced Application Demonstration
 
 The following video walks through all functionality of the completed application. 
 
 {% include youtube.html id="5Hzb3DUaLNI" title="Application Demonstration" %}
 
+## Enhancements Deep Dive
+
+All enhancements are covered in the following pages. Each features screenshots from the development process of the newly created application. A detailed narrative/reflection is also provided for each enhancment that will cover all decisions made in order to complete this project.
+
 ### Software Design and Engineering
 
-Pending narritive information
+My end goal for the first enhancement is to deliver an application that demonstrates my ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals
+
+[Software Design and Engineering Enhancement](/enhancement-one/)
 
 ### Algorithms and Data Structures
 
-Pending narritive information
+My end goal for the second enhancement is to deliver and application that demonstrates my ability to design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while managing the trade-offs involved in design choices.
+
+[Algorithms and Data Structures Enhancement](enhancement-two)
 
 ### Databases
 
-Pending narritive information
+My end goal for the third enhancement is to deliver an application that demonstrates my ability to showcase a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources.
+
+[Databases Enhancement](enhancement-three)
