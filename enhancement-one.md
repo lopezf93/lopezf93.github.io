@@ -6,8 +6,7 @@ permalink: /enhancement-one/
 
 {% include navigation.html %}
 
-# Enhancement One: 
-# Software Design and Engineering
+# Enhancement One: Software Design and Engineering
 
 On this page, I will detail the first enhancement that was successfully completed from the original code review of the mobile version of the Inventory Tracker.
 
