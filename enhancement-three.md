@@ -70,8 +70,8 @@ New User Table, featuring hashed passwords, and created at time stamp fields.
 
 When passing queries to database, parameterized queries are leveraged to support against SQL injection. 
 ```python
-# parameterized query using '?' as placeholder to support against potential
-# SQL injection point
+# parameterized query using '?' as placeholder to support against
+# potential SQL injection point
 cursor.execute("""
   INSERT INTO users (username, password_hash, created_at) 
   VALUES (?, ?, ?)""", (username, password_hash, timestamp))
