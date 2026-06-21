@@ -67,13 +67,19 @@ class User:
 ### New Inventory Model
 
 ```python
-# InventoryItem class defined, contains parameters item_name, category,
-# quantity, min_threshold, max_threshold, item_id, created_at, updated_at
+# InventoryItem class defined, contains parameters
+# item_name, category, quantity, min_threshold,
+# max_threshold, item_id, created_at, updated_at
 class InventoryItem:
-    def __init__(self, item_name: str, category: str, quantity: int,
-                 min_threshold: int = 0, max_threshold: int = 100,
-                 item_id: Optional[int] = None, created_at: Optional[str] = None,
-                 updated_at: Optional[str] = None):
+    def __init__(self,
+            item_name: str,
+            category: str,
+            quantity: int,
+            min_threshold: int = 0,
+            max_threshold: int = 100,
+            item_id: Optional[int] = None,
+            created_at: Optional[str] = None,
+            updated_at: Optional[str] = None):
         self.item_name = item_name
         self.category = category
         self.quantity = quantity
@@ -118,8 +124,8 @@ The category breakdown feature needed a unique fix to return the needed data to 
 In order to present the quantities of all items in all given categories, a dictionary was built in a single O(n) pass, using the dictionary as a running tally for each time a category is read. A less efficient manner may have included looping through the list for each unique category, bringing the complexity up to O(n * k) where k is each unique category. 
 
 ```python
-# builds and returns a dictionary mapping each category name to the count of items
-# in that category
+# builds and returns a dictionary mapping each category
+# name to the count of items in that category
 def get_category_breakdown(self) -> dict:
     all_items = self.inventory_repository.get_all_items()
     category_breakdown = {}
@@ -150,8 +156,8 @@ def _sort_table(self, table, column, numeric=False):
     rows = []
 
     # iterate through all every row's iid, for each one, read current
-    # values of those cells, return both value and iid makes sort possible via
-    # iid value
+    # values of those cells, return both value and iid makes sort
+    # possible via iid value
     for iid in table.get_children():
         cell_value = table.set(iid, column)
         rows.append((cell_value, iid))
