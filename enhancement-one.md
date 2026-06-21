@@ -17,11 +17,11 @@ The first enhancement was focused on the over all design and structute of the or
 
 Key aspects I aim to address were: 
 
-- [x] Recreate the application in Python from Java
-- [x] Clear separation of concerns between logic layers: GUI layers, database logic etc...
-- [x] Improve interface design, ensure final application is cohesive in theme and styling
-- [x] Make use of resources such as a TKinter, Figma to accomplish visual components
-- [x] Make use of traditional software engineering tools like UML diagrams and flow charts during planning stages
+- Recreate the application in Python from Java
+- Clear separation of concerns between logic layers: GUI layers, database logic etc...
+- Improve interface design, ensure final application is cohesive in theme and styling
+- Make use of resources such as a TKinter, Figma to accomplish visual components
+- Make use of traditional software engineering tools like UML diagrams and flow charts during planning stages
 
 ## Before and After Comparison
 ### Original Application GUI
