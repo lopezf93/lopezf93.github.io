@@ -36,8 +36,25 @@ Key aspects I aim to address were:
 
 
 ## Before and After Comparison
+### Mobile Application Database Tables
+Pending original view, capture in android studio database viewer
 
-pending images to use for comparison
+Old User table, stores passwords as plain text strings, no logging related fields. 
+
+Old Inventory Table, all item records only consist of item name, and quantity on hand. 
+
+### Enhanced Python Desktop App Database Tables
+
+New User Table, featuring hashed passwords, and created at time stamp fields. 
+![User Table](assets/images/Database_User_Table.png)
+
+New Inventory Table, featuring newly added category, min/max threshold, and created/modified fields. 
+![Inventory Table](assets/images/Database_Inventory_Table.png)
+
+New Inventory Transactions table, completely new to the Python version of the application. 
+Now features running history of all item changes such as ADD, UPDATE, and DELETE events. 
+Compelte with fields such as old quantity, new quantity, tinestamp. 
+![Transactions Table](assets/images/Database_Transaction_Table.png)
 
 ## Reflection
 
@@ -47,7 +64,13 @@ The original artifact is an Android mobile application, written in Java that was
 
 ### Why did I select this artifact to improve and what skills did it show case? 
 
-pending narritive justification
+The inclusion of this particular enhancement was mostly due to my own personal affinity for activity tracking data. I have worked with data for the last five years at my current workplace, and one thing that I have leveraged more so than any other skill is my ablility to find correlations across data sets. I initially only wanted to include the new Inventory Transaction table and when I first set out to make the addition, I realized the other tables were also lacking in fields that would support the creation of this table. 
+
+Upon reviewing the User Table of the original application, I realized that I had no encryption methods for passwords, nor did I have any sort of means to ensure passwords were any more sophisticated than just a certain character length. I leverged Bcrypt for my data encryption, but also built new logic to check if the entered password contained at least 1 numerical character and at least 1 special character ex: <>?,./ etc... 
+
+Then once I reviewed the inventory table, I realized that I had no means to determine when inventory items we last modified. I also had no means to make the new dashboard view possible as I lacked fields such as a category field or minimum and maximum thresholds to evolve to original out of stock notification functionality. Once included, the database fully supported my aspirations for the algorithmic enhancements made for the application as well. 
+
+I also included robust error handling throughout any input fields related to any functions that altered records in the database, allow the application to give meaningful feedback to the user in case anything was entered incorrectly. From character lengths, to input type, all cases were covered for any field a user would need to input data. This was done not only to make the experience enjoyable for the user, but to further fortify the applciation against malicious intent. 
 
 ### Final Reflection
 
