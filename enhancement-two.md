@@ -50,10 +50,15 @@ public class InventoryItem {
 The new application features a user model class and an inventory model class. This allowed for greater complexity for functions created for updating records in the databases for both users and inventory items. 
 
 ```python
-# User class defined, contain parameters username, password_hash, user_id
-# and created_at
+# User class defined, contain parameters username,
+# password_hash, user_id and created_at
 class User:
-    def __init__(self, username: str, password_hash: str, user_id: Optional[int] = None, created_at: Optional[str] = None):
+    def __init__(
+            self,
+            username: str,
+            password_hash: str,
+            user_id: Optional[int] = None,
+            created_at: Optional[str] = None):
         self.username = username
         self.password_hash = password_hash
         self.user_id = user_id
