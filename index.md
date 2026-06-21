@@ -3,6 +3,8 @@ layout: default
 title: Frank Lopez Software Engineer Portfolio
 ---
 
+{% include navigation.html %}
+
 # Professional Self-Assessment
 
 Pending self review
