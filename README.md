@@ -3,13 +3,17 @@
 ePortfolio for Frank Lopez, a SNHU Computer Science Major.
 
 [Home Page](https://lopezf93.github.io/)
+
 Contains:
 - Self Review
 - Code Review
 - Enhancement Plan
 - Final Application Demonstration
+
 [Enhancement One](https://lopezf93.github.io/enhancement-one/)
+
 [Enhancement Two](https://lopezf93.github.io/enhancement-two/)
+
 [Enhancement Three](https://lopezf93.github.io/enhancement-three/)
 
 ## Navigating the Repository
