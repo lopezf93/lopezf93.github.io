@@ -21,8 +21,11 @@ The folder assets contains all the original screenshots used throughout the port
 At the top of the page, a navigation bar was implemented to quickly switch between enhancement pages if needed. This was implemented to ensure the entire portfolio was not one giant continuous page. 
 
 ## Credits
+
 All credit for pages theme to Jon Rohan
+
 [Time Machine Theme](https://github.com/pages-themes/time-machine/blob/master/README.md)
 
 Final grammar pass and spell check of completed portfolio performed by ChatGPT
+
 [ChatGPT](https://chatgpt.com/)
