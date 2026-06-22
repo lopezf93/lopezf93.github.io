@@ -12,22 +12,22 @@ On this page, I will detail the second enhancement that was successfully complet
 
 ## Overview
 
-The second enhancement was focused in making use of algorithms and datastructures to improve the original Inventory Tracker.
+The second enhancement focused on making use of algorithms and data structures to improve the original Inventory Tracker.
 
-Key aspects I aim to address were: 
+Key aspects I aimed to address were:
 
 - I made the inventory data model more useful. Instead of only storing item name and quantity, the enhanced version includes fields such as category, minimum threshold, maximum threshold, created date, and modified date.
 - I added search, sort, and filter functionality. This allows users to search by item name or category.
-- The ability to alpha-numerically sort items by name, category, and quantity was added so that the table was not completely static.
-- I added dashboard-style logic for a new view that summarizes the inventory data. For example: the application now shows total items, low-stock items, out-of-stock items, or items that have not been updated recently.
+- The ability to alphanumerically sort items by name, category, and quantity was added so that the table was not completely static.
+- I added dashboard-style logic for a new view that summarizes the inventory data. For example, the application now shows total items, low-stock items, out-of-stock items, and items that have not been updated recently.
 - These enhancements demonstrate stronger use of Python data structures such as lists, dictionaries, and custom objects.
-- This shows more meaningful algorithmic thinking because the program will not just store and display records; it will present inventory data in a way that users such as a business managers can make actionable and informed decision at a quick glance. 
+- This shows more meaningful algorithmic thinking because the program does not just store and display records; it presents inventory data in a way that users, such as business managers, can use to make actionable and informed decisions at a quick glance.
 
 ## Before and After Comparison
 
 ### Original Item Model
 
-The original application only featured an inventory item model and did not have a model for a user class. 
+The original application only featured an inventory item model and did not have a model for a user class.
 
 ```java
 public class InventoryItem {
@@ -47,7 +47,7 @@ public class InventoryItem {
 ```
 ### New User Model
 
-The new application features a user model class and an inventory model class. This allowed for greater complexity for functions created for updating records in the databases for both users and inventory items. 
+The new application features both a user model class and an inventory model class. This allowed for greater complexity in the functions created for updating records in the databases for both users and inventory items.
 
 ```python
 # User class defined, contain parameters username,
@@ -90,26 +90,25 @@ class InventoryItem:
         self.updated_at = updated_at
 ```
 ### No prior sorting/searching algorithms present in the original application
-Due to the scope of the original application being entirely focused on building a functional application, there was no focus on complex alogrithms that could perform any sort of mutations or look ups on data. 
+
+Due to the scope of the original application being entirely focused on building a functional application, there was no focus on complex algorithms that could perform any sort of mutation or lookup on data.
 
 ### Search/Scan methods introduced in the new application
 
-The dashboard_view.py that was newly introduced in the python application is where the majority of algorithmic principles are explored for the application. 
+The dashboard_view.py file that was newly introduced in the Python application is where the majority of algorithmic principles are explored for the application.
 
 This enhancement makes use of of the following methods: 
 
-Linear Scan Methods:
-All methods share the same patterns of fetching all items, then looping through the list once. 
+Linear Scan Methods: All methods share the same pattern of fetching all items, then looping through the list once.
 - `get_total_item_count()`
 - `get_total_quantity()`
 - `get_low_stock_items()`
 - `get_over_stock_items()`
 - `get_category_breakdown()`
 
-This is to say, if you have n items in inventory, the algorithm will do n units of work, for a time complexity of O(n), or linear time. 
+This is to say, if you have n items in inventory, the algorithm will do n units of work, for a time complexity of O(n), or linear time.
 
-Min Max Reduction:
-The `max()` and `min()` built in python functions scan a full list once to find the corresponding extreme value. By nature, they must inspect every element for an unsorted list. 
+Min Max Reduction: The `max()` and `min()` built-in Python functions scan a full list once to find the corresponding extreme value. By nature, they must inspect every element in an unsorted list.
 - `get_highest_quantity_item()`
 - `get_lowest_quantity_item()`
 - `get_newest_item()`
@@ -119,9 +118,9 @@ This also features a time complexity of O(n)
 
 ### Solution to category breakdown
 
-The category breakdown feature needed a unique fix to return the needed data to present in the dashboard. 
+The category breakdown feature needed a unique fix to return the required data for presentation in the dashboard.
 
-In order to present the quantities of all items in all given categories, a dictionary was built in a single O(n) pass, using the dictionary as a running tally for each time a category is read. A less efficient manner may have included looping through the list for each unique category, bringing the complexity up to O(n * k) where k is each unique category. 
+In order to present the quantities of all items in all given categories, a dictionary was built in a single O(n) pass. The dictionary acts as a running tally each time a category is read. A less efficient approach may have included looping through the list for each unique category, bringing the complexity up to O(n * k), where k is each unique category.
 
 ```python
 # builds and returns a dictionary mapping each category
@@ -139,16 +138,16 @@ def get_category_breakdown(self) -> dict:
     return category_breakdown
 ```
 ### Table sorting
-Sorting algorithms for the tables were much more difficult to implement but were also not previously implemented in the original application. 
+Sorting algorithms for the tables were much more difficult to implement, and they were also not previously implemented in the original application.
 
-Pythons built in `.sort()` was leveraged over a manual sort such as bubble sort or insertion sort. Pythons built in sort function makes use of an algorithm called Timsort, with a complexity of O(n log n). As a comparison based sort, it can do no better than O(n log n) generally, however in the event that something is already sorted or partially sorted, the method benefits and can better complexity in certain scenarios.
+Pythons built-in `.sort()` method was leveraged instead of a manual sort implementation, such as bubble sort or insertion sort. Python’s built-in sort function makes use of an algorithm called Timsort, with a complexity of O(n log n). As a comparison-based sort, it generally can do no better than O(n log n). However, in the event that something is already sorted or partially sorted, the method benefits and can achieve better performance in certain scenarios.
 
 There are 3 main components for the sort:
 - Build rows list - O(n)
 - Sort - O(n log n)
 - Reorder Table - O(n)
 
-The dominant term in this case trumps the others, resulting in an overall complexity for the algorithm as O(n log n)
+The dominant term in this case determines the final complexity, resulting in an overall complexity of O(n log n) for the algorithm.
 
 ```python
 def _sort_table(self, table, column, numeric=False):
@@ -205,18 +204,18 @@ def _sort_table(self, table, column, numeric=False):
 
 ### What was the original artifact? 
 
-The original artifact is an Android mobile application, written in Java that was original created by closely following for materials for course CS 360. The foundation provided by this course allowed me to successfully recreate the entire application in Python for my proposed enhancement plan of the application.
+The original artifact is an Android mobile application written in Java that was originally created by closely following the materials for the CS 360 course. The foundation provided by this course allowed me to successfully recreate the entire application in Python for my proposed enhancement plan.
 
 ### Why did I select this artifact to improve and what skills did it show case? 
 
-The dedicated service files are where the main meat and focus on algorithms and date structures lie, mostly in the inventory_service and the dashboard_service file. The serach_items() function in the inventory_service files demonstrates an algorithm that performs a linear search across a list of objects, evaluating each item against a query string across two fields, item_name and category. It also simultaneously handles edge cases such as an empty string being entered returning the full unfiltered list and exiting immediately. While simple in nature, it is an integral part of what makes the table in the inventory_view file possible when it comes to sorting through larger sets of data. 
+The dedicated service files are where the main focus on algorithms and data structures lies, mostly in the inventory_service and dashboard_service files. The search_items() function in the inventory_service file demonstrates an algorithm that performs a linear search across a list of objects, evaluating each item against a query string across two fields: item_name and category. It also simultaneously handles edge cases, such as an empty string being entered, by returning the full unfiltered list and exiting immediately. While simple in nature, it is an integral part of what makes the table in the inventory_view file possible when it comes to sorting through larger sets of data.
 
-Another few examples from the dashboard_service file are the get_highest_quantity_item() and get_lowest_quantity_item() functions that use many of pythons functions such as max()/min() and lambda in order to return whichever items has the most or least units on hand in the inventory table. Another algorithmic example is the get_category_breakdown() function which builds a frequency dictionary from a list. Converting one data structure to another is a valuable skill to have and was necessary to summarize all categories in the inventory table. 
+A few other examples from the dashboard_service file are the get_highest_quantity_item() and get_lowest_quantity_item() functions, which use many of Python’s functions, such as max(), min(), and lambda, in order to return whichever items have the most or least units on hand in the inventory table. Another algorithmic example is the get_category_breakdown() function, which builds a frequency dictionary from a list. Converting one data structure to another is a valuable skill to have and was necessary to summarize all categories in the inventory table.
 
 ### Final Reflection
 
-I have met the above outcome specifically with all through different functionalities in the dashboard_service as these enhancements were crucial to being able present summarizations of the data present in the inventory database. Without it, all the inventory tracking app was essentially a glorified list maker. Now with the dashboard, common insights needed in reporting and operations for companies that need an inventory tracking app are made possible thanks to sorting, summation and data structure conversion algorithms introduced in this enhanced version of the application. 
+The dashboard_service file showcases my ability to leverage meaningful algorithms, as these enhancements were crucial for presenting summaries of the data stored in the inventory database. Without these improvements, the inventory tracking app was essentially a glorified list maker. Now, with the dashboard, common insights needed in reporting and operations for companies that need an inventory tracking app are made possible thanks to the sorting, summation, and data structure conversion algorithms introduced in this enhanced version of the application.
 
-I learned a great deal in common sorting practices when working with tables in python. Ensuring I was making targeted specific functions that pulled very specific data was paramount to ensuring the dashboard would be successful. I leveraged my own knowledge from excel and thought about common patterns I would leverage when presenting data to peers when considering what sort of data should be presented in the dashboard. Making these functions work was a reward and the application is became something I am quite proud of that I may leverage in my own day to day life. Maybe I will not use specifically for tracking inventory, but perhaps I can rebrand it track anything that is quantifiable. 
+I learned a great deal about common sorting practices when working with tables in Python. Ensuring I was creating targeted, specific functions that pulled very specific data was paramount to ensuring the dashboard would be successful. I leveraged my own knowledge from Excel and thought about common patterns I use when presenting data to peers while considering what sort of data should be presented in the dashboard. Making these functions work was rewarding, and the application became something I am quite proud of that I may leverage in my own day-to-day life. Maybe I will not use it specifically for tracking inventory, but perhaps I can rebrand it to track anything that is quantifiable.
 
 [← Back to Home](/)
