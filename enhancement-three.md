@@ -41,7 +41,11 @@ Pending original view, capture in android studio database viewer
 
 Old User table, stores passwords as plain text strings, no logging related fields. 
 
+![Original User Table](assets/images/Original_Database_User_Table.png)
+
 Old Inventory Table, all item records only consist of item name, and quantity on hand. 
+
+![Original Inventory Table](assets/images/Original_Database_Inventory_Table.png)
 
 All original database tables exclusively worked with string data types regardless of data type being read. This was remedied in the enhanced version. 
 ```java
