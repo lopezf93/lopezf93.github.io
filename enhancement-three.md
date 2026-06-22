@@ -37,7 +37,6 @@ Key aspects I aim to address were:
 
 ## Before and After Comparison
 ### Mobile Application Database Tables
-Pending original view, capture in android studio database viewer
 
 Old User table, stores passwords as plain text strings, no logging related fields. 
 
